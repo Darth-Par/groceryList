@@ -1,11 +1,24 @@
 {
   "name": "grocerylist",
   "version": "1.0.0",
-  "description": "",
+  "description": "Grocery List App.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Darth-Par/groceryList.git"
+  },
   "author": "Darth-Par",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Darth-Par/groceryList/issues"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "express-generator": "^4.16.0"
+  }
 }
