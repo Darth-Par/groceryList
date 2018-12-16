@@ -2,8 +2,10 @@
   "name": "grocerylist",
   "version": "1.0.0",
   "description": "Grocery List App.",
-  "main": "index.js",
+  "main": "app.js",
   "scripts": {
+    "start": "nodemon app.js",
+    "debug": "DEBUG=app npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -16,7 +18,10 @@
     "url": "https://github.com/Darth-Par/groceryList/issues"
   },
   "dependencies": {
-    "express": "^4.16.4"
+    "chalk": "^2.4.1",
+    "debug": "^4.1.0",
+    "express": "^4.16.4",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "express-generator": "^4.16.0",
