@@ -7,7 +7,7 @@ const path = require('path');
 
 // App and port declarations.  Instance of express and port.
 const app = express();
-const port = 8000;
+const port = process.env.PORT || 8000;
 
 // Middleware.
 app.use(morgan('tiny'));
@@ -27,5 +27,5 @@ app.get('/', (req, res) => {
 
 // Server running...
 app.listen(port, () => {
-  debug(`Server listening on port ${chalk.blue(port)}!`);
+  debug(`Server listening on port ${chalk.red(port)}!`);
 });
