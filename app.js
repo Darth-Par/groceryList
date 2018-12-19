@@ -10,7 +10,7 @@ const app = express();
 const port = 8000;
 
 // Middleware.
-app.use(morgan('combined'));
+app.use(morgan('tiny'));
 // Assets served from public folder.
 app.use(express.static(path.join(__dirname, '/public/')));
 // Bootstrap, jQuery, Popper.js and font-awesome served from node_modules
